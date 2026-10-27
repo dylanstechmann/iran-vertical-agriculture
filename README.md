@@ -15,7 +15,7 @@ The model is **illustrative**, not construction-ready. It uses **metric units** 
 - `countries.geojson` — public-domain Natural Earth admin-0 country outline used as the source boundary.
 - `iran_boundary_simplified.json` — simplified boundary and center coordinates used by the national map scene.
 - `README.md` — this outline and legend.
-- `side-quests/rural-florida/` — labeled side quest: rural-Florida high-tech agriculture scenario (config-driven model, generated report, tests, docs, and its own 3D visualizations).
+- The rural-Florida scenario track now lives in its own repository; see "Side scenario: rural Florida" below.
 
 ## Scene index
 | Scene | Purpose | Camera |
@@ -164,13 +164,13 @@ This distinction is deliberate: tall fruiting crops need substantial vertical sp
 | Red | Waste / purge |
 | Light blue | Production hub marker |
 
-## Side quest: rural Florida
+## Side scenario: rural Florida (separate repository)
 
-A second, separately labeled scenario track lives in [side-quests/rural-florida/](side-quests/rural-florida/README.md). It adapts the same controlled-environment pattern to rural Florida: elevated flood-aware grow halls, a CUPS-style insect-exclusion screenhouse for citrus (oranges), high-value crops such as pea shoots, herbs, strawberries, tomatoes and peppers, solar plus battery storage, rainwater harvest, and hurricane/flood resilience.
+A second, separately labeled scenario track adapts the same controlled-environment pattern to rural Florida: elevated flood-aware grow halls, a CUPS-style insect-exclusion screenhouse for citrus (oranges), high-value crops such as pea shoots, herbs, strawberries, tomatoes and peppers, solar plus battery storage, rainwater harvest, and hurricane/flood resilience.
 
-It borrows the scenario-track pattern from the AI/robot-parenting project: config-driven assumptions (`config/scenario.json`), a generated planning report (`docs/scenario-report.md`) pinned by tests, local-first automation, N+1 redundancy, and a qualification ladder (simulated day → wet test → commissioning → first crop-cycle audit). Its 3D visualizations live in a separate Blender file, `side-quests/rural-florida/viz/rural-florida-campus.blend` (scenes `FLRural_Index`, `FLRural_Campus`, `FLRural_Systems`), so the Iran file above stays the untouched baseline.
+It began inside this repository under `side-quests/rural-florida/` and has moved to its own standalone repository so it can be published and updated independently: https://github.com/dylanstechmann/rural-florida-agriculture (currently private). There it keeps the same pattern: config-driven assumptions (`config/scenario.json`), a generated planning report (`docs/scenario-report.md`) pinned by tests, local-first automation, N+1 redundancy, a qualification ladder (simulated day → wet test → commissioning → first crop-cycle audit), and its own 3D visualizations (scenes `FLRural_Index`, `FLRural_Campus`, `FLRural_Systems`).
 
-All Florida-side numbers are labeled placeholder arithmetic, never measurements or designs.
+All Florida-side numbers remain labeled placeholder arithmetic, never measurements or designs.
 
 ## Engineering and data caveats
 - The model is a **concept illustration**, not a construction document.
